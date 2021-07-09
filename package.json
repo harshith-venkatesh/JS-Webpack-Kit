@@ -8,7 +8,7 @@
       "@babel/preset-env"
     ]
   },
-  "browserslist": "> 0.25%, not dead",
+  "browserslist": "> 0.20%, not dead",
   "scripts": {
     "build": "webpack",
     "lint": "eslint",
