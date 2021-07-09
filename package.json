@@ -1,0 +1,40 @@
+{
+  "name": "javascript-webpack-kit",
+  "version": "1.0.0",
+  "description": "Vanilla JS Project including webpack features",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": "> 0.25%, not dead",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshith-venkatesh/JS-Webpack-Kit.git"
+  },
+  "keywords": [
+    "Javascript",
+    "webpack",
+    "vanillaJS",
+    "bundler"
+  ],
+  "author": "Harshith Venkatesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshith-venkatesh/JS-Webpack-Kit/issues"
+  },
+  "homepage": "https://github.com/harshith-venkatesh/JS-Webpack-Kit#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "webpack": "^5.38.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.2"
+  }
+}
