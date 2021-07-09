@@ -11,5 +11,12 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-    }
+        'prettier/prettier': [
+          'error',
+          {
+            singleQuote: false,
+            semi: true,
+          }
+        ],
+      },
 };

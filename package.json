@@ -11,7 +11,7 @@
   "browserslist": "> 0.20%, not dead",
   "scripts": {
     "build": "webpack",
-    "lint": "eslint",
+    "lint": "eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,15 +30,15 @@
     "url": "https://github.com/harshith-venkatesh/JS-Webpack-Kit/issues"
   },
   "homepage": "https://github.com/harshith-venkatesh/JS-Webpack-Kit#readme",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
     "babel-loader": "^8.2.2",
-    "webpack": "^5.38.1",
+    "css-loader": "^5.2.6",
     "eslint": "^7.30.0",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2"
   }
 }
