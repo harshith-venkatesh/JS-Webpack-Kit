@@ -1,9 +1,11 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 const webpackConfig = {
     entry: path.resolve(__dirname,"src","index.js"),
     output: {
         filename:"main.js",
-        path: path.resolve(__dirname,"dist")
+        path: path.resolve(__dirname,"dist"),
+        clean:true
     },
     module:{
         rules:[
@@ -27,6 +29,12 @@ const webpackConfig = {
             }
         ]
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title:"Vanilla JS App",
+            template: path.resolve(__dirname,"src","index.html")
+        })
+    ],
     mode:"production"
 }
 
