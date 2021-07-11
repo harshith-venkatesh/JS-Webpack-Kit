@@ -36,7 +36,7 @@ const webpackConfig = {
             title:"Vanilla JS App",
             template: path.resolve(__dirname,"src","index.html")
         }),
-        new ESLintPlugin(options)
+        new ESLintPlugin()
     ],
 
     optimization:{
