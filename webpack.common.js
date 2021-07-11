@@ -48,11 +48,7 @@ const webpackConfig = {
             }
         }
     },
-    devtool: "inline-source-map",
-    devServer: {
-        contentBase: "./dist"
-    },
-    mode:"production"
+    
 }
 
 
