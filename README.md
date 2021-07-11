@@ -1,7 +1,18 @@
-# VanillaJS-Starter-Webpack-Kit
+# VanillaJS-Starter-Webpack-Kit 
 
-Supports tooling with webpack for vanilla JS projects. 
+Supports modern tooling with webpack for vanilla JS projects. 
 Start building vanillaJS projects with preconfigured optimizations and webpack support. 
+
+## features
+
+- import/export
+- minification
+- hashing
+- css loader
+- babel support
+- inline style asset support
+- title change through config file
+- hosted on netlify
 
 Steps to clone the project include
 ```js
