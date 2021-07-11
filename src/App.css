@@ -1,7 +1,23 @@
+* {
+    padding: 0rem;
+    margin:0rem;
+    box-sizing: border-box;
+    background-color: #E5E7EB;
+}
 h1 {
     color:blue;
+    text-align: center;
+    font-size: 3rem;
 }
 
 h2 {
-    color:orange
+    color:orange;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    color:#3B82F6;
+    text-align: center;
+    font-size: 1.5rem;
 }
