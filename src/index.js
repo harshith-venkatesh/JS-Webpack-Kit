@@ -1,17 +1,12 @@
-
-import "./App.css"
-import Gear from "./gear.svg"
+import './App.css';
+import Gear from './gear.svg';
 
 let root;
 
-
-
-
 function init() {
-    root = document.getElementById("root");
-    
+  root = document.getElementById('root');
 
-    root.innerHTML = `
+  root.innerHTML = `
         <div class="container">
             <div class="page_title">
                 <img src="${Gear}" class="gear__animate" alt="build-icon" />
@@ -40,27 +35,26 @@ function init() {
                 </ul>
             </div>
         </div>
-        `
+        `;
+}
+
+function loadAbout() {
+  import('./App').then(({ default: App }) => {
+    const about = App({ name: 'Harshith Venkatesh' });
+    document.querySelector('#home_page').innerHTML = about;
+  });
+}
+
+function redirectToGithub() {
+  Object.assign(document.createElement('a'), {
+    target: '_blank',
+    href: 'https://github.com/harshith-venkatesh/JS-Webpack-Kit',
+  }).click();
 }
 
 init();
 
-const home_page_button = document.querySelector("#click_home_page")
-home_page_button.addEventListener("click", loadAbout)
-const about_button = document.querySelector("#click_about")
-about_button.addEventListener("click", redirectToGithub)
-
-function loadAbout() { 
-    import("./App").then(({default: App})=> {
-        const about = App({name: "Harshith Venkatesh"})
-        document.querySelector("#home_page").innerHTML = about;
-    })
-}
-
-
-  function redirectToGithub() {
-    Object.assign(document.createElement('a'), {
-        target: '_blank',
-        href: 'https://github.com/harshith-venkatesh/JS-Webpack-Kit',
-      }).click();
-  }
+const homePageButton = document.querySelector('#click_home_page');
+homePageButton.addEventListener('click', loadAbout);
+const aboutButton = document.querySelector('#click_about');
+aboutButton.addEventListener('click', redirectToGithub);
